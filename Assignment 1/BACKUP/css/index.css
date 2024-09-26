@@ -1,0 +1,29 @@
+body {
+	background-image: url("../images/paint.jpg");
+	background-color: rgba(255,255,255, 0.8);
+	background-blend-mode: lighten;
+	font-family:arial;
+	font-weight:bold;
+	text-align:center;
+}
+		
+.gridContainer { 
+	positioning:relative; 
+	margin:20px; 
+	padding:20px;
+	display: grid; 
+	grid-template-rows: auto;
+	grid-template-areas: 
+		"header header header"
+		"content content content"
+		"footer footer footer";
+}
+
+.header {grid-area: header; 
+	background: clear;}
+	
+.content {grid-area: content; 
+	background: grey; }
+	
+.footer {grid-area: footer; 
+	background: clear }
